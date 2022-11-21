@@ -61,18 +61,19 @@ public class Ekstra {
         System.out.println("## Printing the pattern ##");
 
         // Print i number of stars
-        for (int i=1; i<=rows; i++)
-        {
-            for (int j=1; j<=i; j++)
-            {
-                if( j == 1 || j == i || i == rows)
+        for (int i=1; i<=rows; i++) {
+            for (int j=1; j<=i; j++) {
+                if( j == 1 || j == i || i == rows) {
                     System.out.print("*");
-                else
+                }
+                else {
                     System.out.print(" ");
+                }
             }
             System.out.println();
+
         }
-        scanner.close();
+
 
 
 

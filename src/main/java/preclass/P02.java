@@ -8,9 +8,32 @@ public class P02 {
 
     public static void main(String[] args) {
 
-        int yas = 25;
+        // example 1
+
+
+        String x = "Hello World";
+
+        System.out.println(x);
+
+        // example 2
+
+        int yas = 25, boy = 155, kilo = 53;
+
+        System.out.println(boy-yas);
+
+
+        // example 3
+
+        char avukat = 'A';
+        char avukat2 = 'v';
+
+        System.out.print(avukat);
+        System.out.println(avukat2);
+
+
+        int yas2 = 25;
         String tc = "0123456789";
-        float boy = 1.55F;
+        float boy2 = 1.55F;
 
         System.out.println(yas + " " + tc + " " + boy);
 
@@ -19,9 +42,9 @@ public class P02 {
         System.out.println("Isminiz : " + isim);
         System.out.println("Soyisminiz : " + soyIsim);
 
-        int x = 3463467;
+        int xy = 3463467;
         byte y = 34;
-        System.out.println(x+y);
+        System.out.println(xy+y);
 
         long a = 34863298;
         double b = 31.567879;

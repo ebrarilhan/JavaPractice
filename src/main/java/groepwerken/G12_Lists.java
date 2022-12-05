@@ -199,8 +199,6 @@ public class G12_Lists {
             arr[(myList.indexOf(w))] = w.split("\\$")[1];
 
 
-
-
         }
 
         System.out.println(Arrays.toString(arr));
@@ -214,6 +212,25 @@ public class G12_Lists {
         //10) Bir String listesinde verilen en düşük ve en büyük fiyatın toplamını bulunuz.
         //Örnek: List<String> myList = new List<String>{'$12.99', '$8.25', '$23.60', '$54.45'}; ==> 62.70
 
+        List<String> mijnList = new ArrayList<>();
+        mijnList.add("$12.99");
+        mijnList.add("$8.25");
+        mijnList.add("$23.60");
+        mijnList.add("$54.45");
+
+        double k;
+        double[] mijnarr = new double[mijnList.size()];
+
+        for (int i = 0; i <mijnList.size() ; i++) {
+
+            k = Double.parseDouble(mijnList.get(i).replace("$", ""));
+            mijnarr[i]=k;
+
+        }
+        System.out.println(Arrays.toString(mijnarr));
+        Arrays.sort(mijnarr);
+
+        System.out.println("toplam : " + (mijnarr[0]+mijnarr[mijnarr.length-1]));
 
 
 
